@@ -4931,6 +4931,7 @@ class LandmarkGrid {
      * @return {void}
      */
     updateLandmarks(landmarks, colorConnections = [], colorLandmarks) {
+        console.log('updating landmarks')
         this.landmarkGroup.clear();
         this.connectionGroup.clear();
         this.clearResources();

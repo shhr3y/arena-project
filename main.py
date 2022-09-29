@@ -28,6 +28,9 @@ def ping(*args):
     json_list = []
     for landmark in landmarks:
         json_object = json.loads(landmark)
+        json_object.pop("index", None)
+        json_object.pop("isRemoved", None)
+        json_object.pop("presence", None)
         json_list.append(json_object)
 
     sio.emit('render', {'data': json_list})
