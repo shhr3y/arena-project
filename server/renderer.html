@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d/control_utils_3d.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .square-box {
+        width: 50%;
+        height: 0;
+        padding-top: 50%;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+      }
+  
+    .landmark-grid-container {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top:0;
+      left:0;
+      background-color: #99999999;
+    }
+  </style>
+<body>
+  <div class="container">
+    <div class="landmark-grid-container"></div>
+  </div>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"></script>
+<script type="application/javascript" src="./script.js" crossorigin="anonymous"></script>
