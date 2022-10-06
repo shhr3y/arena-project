@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "CZf1XwWmZNusgzyGm/3r6m8seGBAvt12hdNGVL0fsASOcFJlzb81X5elvYdkgGmGKqPl2qoXEKhO+dG5NhtlOw==",
+  "success": true,
+  "projectFilePath": "/Users/shrey/arena-project/c/consoleproject/consoleproject.csproj",
+  "expectedPackageFiles": [
+    "/Users/shrey/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/shrey/.nuget/packages/websocketsharp/1.0.3-rc9/websocketsharp.1.0.3-rc9.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebSocketSharp 1.0.3-rc9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "WebSocketSharp",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
