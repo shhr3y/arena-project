@@ -23,6 +23,7 @@ right_wrist_shape = Sphere(
         persist=True,
         # parent = parent_object        
     )
+
 left_wrist_shape = Sphere(
         object_id="left_wrist",
         scale=(0.2,0.2,0.2),
@@ -42,6 +43,22 @@ left_shoulder_shape = Sphere(
 
 right_shoulder_shape = Sphere(
         object_id="right_shoulder",
+        scale=(0.1,0.1,0.1),
+        color=(0,180,55),
+        position=(0,0,0),
+        persist=True,
+    )
+
+left_elbow_shape = Sphere(
+        object_id="left_elbow",
+        scale=(0.1,0.1,0.1),
+        color=(0,180,55),
+        position=(0,0,0),
+        persist=True,
+    )
+
+right_elbow_shape = Sphere(
+        object_id="right_elbow",
         scale=(0.1,0.1,0.1),
         color=(0,180,55),
         position=(0,0,0),
@@ -128,12 +145,16 @@ def update():
         update_left_wrist(global_landmarks[16])
         update_right_shoulder(global_landmarks[11])
         update_left_shoulder(global_landmarks[12])
+        update_right_elbow(global_landmarks[13])
+        update_left_elbow(global_landmarks[14])
 
         scene.run_animations(head_shape)
         scene.run_animations(right_wrist_shape)
         scene.run_animations(left_wrist_shape)
         scene.run_animations(left_shoulder_shape)
         scene.run_animations(right_shoulder_shape)
+        scene.run_animations(left_elbow_shape)
+        scene.run_animations(right_elbow_shape)
         # scene.update_objects([
         #     head_shape, 
         #     right_wrist_shape,
@@ -149,6 +170,8 @@ def add_shapes():
     scene.add_object(head_shape)
     scene.add_object(left_shoulder_shape)
     scene.add_object(right_shoulder_shape)
+    scene.add_object(left_elbow_shape)
+    scene.add_object(right_elbow_shape)
     
 def update_skeleton(landmarks):
     global global_landmarks
@@ -219,6 +242,32 @@ def update_right_shoulder(coordinates):
                 )
     )
     right_shoulder_shape.update_attributes(position=get_position(coordinates))
+
+def update_right_elbow(coordinates):
+    curr_pos = right_elbow_shape.data.position
+    right_elbow_shape.dispatch_animation(
+        Animation(
+                    property="position",
+                    start=curr_pos,
+                    end=get_position(coordinates),
+                    easing="linear",
+                    dur=animation_key
+                )
+    )
+    right_elbow_shape.update_attributes(position=get_position(coordinates))
+
+def update_left_elbow(coordinates):
+    curr_pos = left_elbow_shape.data.position
+    left_elbow_shape.dispatch_animation(
+        Animation(
+                    property="position",
+                    start=curr_pos,
+                    end=get_position(coordinates),
+                    easing="linear",
+                    dur=animation_key
+                )
+    )
+    left_elbow_shape.update_attributes(position=get_position(coordinates))
 
 multplier = 3
 def get_position(coordinates):
