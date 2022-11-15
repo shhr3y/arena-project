@@ -1,10 +1,13 @@
+import json
 import cv2
 import mediapipe as mp
-import xr as arena
 
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_pose = mp.solutions.pose
+
+landmarkFile = 'landmarks.txt' 
+
 
 # For webcam input:
 cap = cv2.VideoCapture(0)
@@ -37,10 +40,12 @@ with mp_pose.Pose(
     for data_point in results.pose_world_landmarks.landmark:
         landmarks.append((data_point.x, data_point.y, data_point.z))
     
-    arena.update_skeleton(landmarks)
+    with open(landmarkFile, 'w') as filetowrite:
+      filetowrite.write(json.dumps(landmarks))
+
 
     # Flip the image horizontally for a selfie-view display.
-    # cv2.imshow('MediaPipe Pose', image)
+    cv2.imshow('MediaPipe Pose', image)
     cv2.imshow('MediaPipe Pose', cv2.flip(image, 1))
     if cv2.waitKey(5) & 0xFF == 27:
       break
