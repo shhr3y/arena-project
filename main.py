@@ -2,7 +2,6 @@ import eventlet
 import socketio
 import json
 import mediapipe as mp
-from eventlet import wsgi
 
 
 host = '192.168.0.108'
@@ -11,8 +10,8 @@ port = 9876
 mp_pose = mp.solutions.pose
 
 
-sio = socketio.AsyncServer()
-app = socketio.ASGIApp(sio)
+sio = socketio.Server(cors_allowed_origins="*", async_mode='eventlet')
+app = socketio.WSGIApp(sio)
 
 @sio.on('connect')
 def connect(*args):
@@ -33,4 +32,4 @@ def ping(*args):
 
 
 if __name__ == '__main__':
-    wsgi.server(eventlet.listen((host, port)), app)
+    eventlet.wsgi.server(eventlet.listen((host, port)), app)
