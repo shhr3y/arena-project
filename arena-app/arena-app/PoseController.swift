@@ -10,7 +10,7 @@ import UIKit
 class PoseController: UIViewController {
     //MARK: - Properties
     var camera = CameraFeedManager()
-    var tracker = FullBodyPoseTracker(Int32(1))
+    var tracker = FullBodyPoseTracker(Int32(2))
     
     //MARK: - UI Elements
     private lazy var broadcastView: UIImageView = {

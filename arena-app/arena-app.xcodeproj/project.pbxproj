@@ -18,21 +18,19 @@
 		3511704629259ABE00056DA7 /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511704529259ABE00056DA7 /* CameraFeedManager.swift */; };
 		3511704829259CBB00056DA7 /* CameraOrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511704729259CBB00056DA7 /* CameraOrientationManager.swift */; };
 		3511704B29259D5000056DA7 /* PoseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511704A29259D5000056DA7 /* PoseController.swift */; };
-		3511704D2925A3DB00056DA7 /* PoseTrackingGpuApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */; };
-		3511704E2925A3DB00056DA7 /* PoseTrackingGpuApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		359E516E2925AFFA007EE5E1 /* Pods_arena_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E66B201F0954CE0D741AEDF /* Pods_arena_app.framework */; };
-		359E516F2925AFFA007EE5E1 /* Pods_arena_app.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E66B201F0954CE0D741AEDF /* Pods_arena_app.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35BC55DE2926009E001B98AC /* PoseTrackingGpuApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */; };
+		35BC55DF2926009E001B98AC /* PoseTrackingGpuApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3511704F2925A3DB00056DA7 /* Embed Frameworks */ = {
+		35BC55E02926009E001B98AC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				359E516F2925AFFA007EE5E1 /* Pods_arena_app.framework in Embed Frameworks */,
-				3511704E2925A3DB00056DA7 /* PoseTrackingGpuApp.framework in Embed Frameworks */,
+				35BC55DF2926009E001B98AC /* PoseTrackingGpuApp.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359E516E2925AFFA007EE5E1 /* Pods_arena_app.framework in Frameworks */,
-				3511704D2925A3DB00056DA7 /* PoseTrackingGpuApp.framework in Frameworks */,
+				35BC55DE2926009E001B98AC /* PoseTrackingGpuApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +147,7 @@
 				3511702729243C1E00056DA7 /* Frameworks */,
 				3511702829243C1E00056DA7 /* Resources */,
 				880BD4698D67EA957EF82300 /* [CP] Embed Pods Frameworks */,
-				3511704F2925A3DB00056DA7 /* Embed Frameworks */,
+				35BC55E02926009E001B98AC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,7 +409,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U4N8ZF8AH7;
+				DEVELOPMENT_TEAM = 8M3X8G3538;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -429,7 +427,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shrey.arena;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrey.arena-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -448,7 +447,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U4N8ZF8AH7;
+				DEVELOPMENT_TEAM = 8M3X8G3538;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -466,7 +465,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shrey.arena;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrey.arena-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
