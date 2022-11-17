@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        view.backgroundColor = .white
         
         view.addSubview(connectButton)
         connectButton.centerX(inView: self.view)
@@ -26,7 +27,9 @@ class ViewController: UIViewController {
     }
     
     @objc func didTapConnect() {
-        SocketService.shared.connectSocket()
+//        SocketService.shared.connectSocket()
+        print("pishing")
+        self.navigationController?.pushViewController(PoseController(), animated: true)
     }
 
 
