@@ -13,9 +13,33 @@
 		3511703529243C1E00056DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3511703329243C1E00056DA7 /* Main.storyboard */; };
 		3511703729243C2200056DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3511703629243C2200056DA7 /* Assets.xcassets */; };
 		3511703A29243C2200056DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3511703829243C2200056DA7 /* LaunchScreen.storyboard */; };
+		3511704229243CEF00056DA7 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511704129243CEF00056DA7 /* SocketService.swift */; };
+		3511704429243F5300056DA7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511704329243F5300056DA7 /* Extensions.swift */; };
+		3511704629259ABE00056DA7 /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511704529259ABE00056DA7 /* CameraFeedManager.swift */; };
+		3511704829259CBB00056DA7 /* CameraOrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511704729259CBB00056DA7 /* CameraOrientationManager.swift */; };
+		3511704B29259D5000056DA7 /* PoseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511704A29259D5000056DA7 /* PoseController.swift */; };
+		359E516E2925AFFA007EE5E1 /* Pods_arena_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E66B201F0954CE0D741AEDF /* Pods_arena_app.framework */; };
+		35BC55DE2926009E001B98AC /* PoseTrackingGpuApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */; };
+		35BC55DF2926009E001B98AC /* PoseTrackingGpuApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35BC55E2292602DC001B98AC /* NativeLandmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BC55E1292602DC001B98AC /* NativeLandmark.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		35BC55E02926009E001B98AC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				35BC55DF2926009E001B98AC /* PoseTrackingGpuApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2E66B201F0954CE0D741AEDF /* Pods_arena_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_arena_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3511702A29243C1E00056DA7 /* arena-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arena-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3511702D29243C1E00056DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3511702F29243C1E00056DA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +48,16 @@
 		3511703629243C2200056DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3511703929243C2200056DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3511703B29243C2200056DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3511704129243CEF00056DA7 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		3511704329243F5300056DA7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3511704529259ABE00056DA7 /* CameraFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		3511704729259CBB00056DA7 /* CameraOrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOrientationManager.swift; sourceTree = "<group>"; };
+		3511704A29259D5000056DA7 /* PoseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseController.swift; sourceTree = "<group>"; };
+		3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PoseTrackingGpuApp.framework; sourceTree = "<group>"; };
+		351170502925A4CF00056DA7 /* arena-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "arena-app-Bridging-Header.h"; sourceTree = "<group>"; };
+		35BC55E1292602DC001B98AC /* NativeLandmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeLandmark.swift; sourceTree = "<group>"; };
+		57197BC23307F5B4AD763928 /* Pods-arena-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arena-app.release.xcconfig"; path = "Target Support Files/Pods-arena-app/Pods-arena-app.release.xcconfig"; sourceTree = "<group>"; };
+		EF03D9F36895BB8C5C58D54A /* Pods-arena-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arena-app.debug.xcconfig"; path = "Target Support Files/Pods-arena-app/Pods-arena-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359E516E2925AFFA007EE5E1 /* Pods_arena_app.framework in Frameworks */,
+				35BC55DE2926009E001B98AC /* PoseTrackingGpuApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +78,8 @@
 			children = (
 				3511702C29243C1E00056DA7 /* arena-app */,
 				3511702B29243C1E00056DA7 /* Products */,
+				879CEA51349480D61F6CF1D6 /* Pods */,
+				A99E60C150ACB765CAB3100C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +95,47 @@
 			isa = PBXGroup;
 			children = (
 				3511702D29243C1E00056DA7 /* AppDelegate.swift */,
+				351170502925A4CF00056DA7 /* arena-app-Bridging-Header.h */,
 				3511702F29243C1E00056DA7 /* SceneDelegate.swift */,
 				3511703129243C1E00056DA7 /* ViewController.swift */,
+				3511704A29259D5000056DA7 /* PoseController.swift */,
+				35BC55E1292602DC001B98AC /* NativeLandmark.swift */,
+				3511704929259D2800056DA7 /* Camera */,
+				3511704129243CEF00056DA7 /* SocketService.swift */,
+				3511704329243F5300056DA7 /* Extensions.swift */,
 				3511703329243C1E00056DA7 /* Main.storyboard */,
 				3511703629243C2200056DA7 /* Assets.xcassets */,
 				3511703829243C2200056DA7 /* LaunchScreen.storyboard */,
 				3511703B29243C2200056DA7 /* Info.plist */,
 			);
 			path = "arena-app";
+			sourceTree = "<group>";
+		};
+		3511704929259D2800056DA7 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				3511704529259ABE00056DA7 /* CameraFeedManager.swift */,
+				3511704729259CBB00056DA7 /* CameraOrientationManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		879CEA51349480D61F6CF1D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF03D9F36895BB8C5C58D54A /* Pods-arena-app.debug.xcconfig */,
+				57197BC23307F5B4AD763928 /* Pods-arena-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A99E60C150ACB765CAB3100C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */,
+				2E66B201F0954CE0D741AEDF /* Pods_arena_app.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3511703E29243C2200056DA7 /* Build configuration list for PBXNativeTarget "arena-app" */;
 			buildPhases = (
+				5CA37848CC81EA598D2F872A /* [CP] Check Pods Manifest.lock */,
 				3511702629243C1E00056DA7 /* Sources */,
 				3511702729243C1E00056DA7 /* Frameworks */,
 				3511702829243C1E00056DA7 /* Resources */,
+				880BD4698D67EA957EF82300 /* [CP] Embed Pods Frameworks */,
+				35BC55E02926009E001B98AC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +207,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CA37848CC81EA598D2F872A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-arena-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		880BD4698D67EA957EF82300 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-arena-app/Pods-arena-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-arena-app/Pods-arena-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-arena-app/Pods-arena-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3511702629243C1E00056DA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3511704429243F5300056DA7 /* Extensions.swift in Sources */,
+				3511704229243CEF00056DA7 /* SocketService.swift in Sources */,
+				3511704B29259D5000056DA7 /* PoseController.swift in Sources */,
+				3511704829259CBB00056DA7 /* CameraOrientationManager.swift in Sources */,
 				3511703229243C1E00056DA7 /* ViewController.swift in Sources */,
 				3511702E29243C1E00056DA7 /* AppDelegate.swift in Sources */,
+				3511704629259ABE00056DA7 /* CameraFeedManager.swift in Sources */,
 				3511703029243C1E00056DA7 /* SceneDelegate.swift in Sources */,
+				35BC55E2292602DC001B98AC /* NativeLandmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +344,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "arena-app/arena-app-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -275,6 +398,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "arena-app/arena-app-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -282,14 +406,21 @@
 		};
 		3511703F29243C2200056DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF03D9F36895BB8C5C58D54A /* Pods-arena-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8M3X8G3538;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "arena-app/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = allow;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -300,9 +431,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shrey.arena-app";
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrey.arena-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "arena-app/arena-app-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,14 +444,21 @@
 		};
 		3511704029243C2200056DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57197BC23307F5B4AD763928 /* Pods-arena-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8M3X8G3538;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "arena-app/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = allow;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,9 +469,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shrey.arena-app";
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrey.arena-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "arena-app/arena-app-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

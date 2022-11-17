@@ -11,7 +11,7 @@ mp_pose = mp.solutions.pose
 
 scene = Scene(host="mqtt.arenaxr.org", scene="myfirstscene")
 
-animation_key = 200
+animation_key = 0
 
 landmarkFile = 'landmarks.txt' 
 
@@ -21,7 +21,7 @@ def init():
     add_shapes()
     
 
-@scene.run_forever(interval_ms=300)
+@scene.run_forever(interval_ms=100)
 def update():
 
     with open(landmarkFile, "r+") as f:
@@ -54,22 +54,22 @@ def update_skeleton(landmarks):
         update_right_elbow(landmarks[13])
         update_left_elbow(landmarks[14])
 
-        scene.run_animations(head_shape)
-        scene.run_animations(right_wrist_shape)
-        scene.run_animations(left_wrist_shape)
-        scene.run_animations(left_shoulder_shape)
-        scene.run_animations(right_shoulder_shape)
-        scene.run_animations(left_elbow_shape)
-        scene.run_animations(right_elbow_shape)
-        # scene.update_objects([
-        #     head_shape, 
-        #     right_wrist_shape,
-        #     left_wrist_shape,
-        #     left_shoulder_shape,
-        #     right_shoulder_shape,
-        #     left_elbow_shape,
-        #     right_elbow_shape,
-        # ])
+        # scene.run_animations(head_shape)
+        # scene.run_animations(right_wrist_shape)
+        # scene.run_animations(left_wrist_shape)
+        # scene.run_animations(left_shoulder_shape)
+        # scene.run_animations(right_shoulder_shape)
+        # scene.run_animations(left_elbow_shape)
+        # scene.run_animations(right_elbow_shape)
+        scene.update_objects([
+            head_shape, 
+            right_wrist_shape,
+            left_wrist_shape,
+            left_shoulder_shape,
+            right_shoulder_shape,
+            left_elbow_shape,
+            right_elbow_shape,
+        ])
 
     
 
