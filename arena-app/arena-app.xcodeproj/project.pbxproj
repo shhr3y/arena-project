@@ -21,6 +21,7 @@
 		359E516E2925AFFA007EE5E1 /* Pods_arena_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E66B201F0954CE0D741AEDF /* Pods_arena_app.framework */; };
 		35BC55DE2926009E001B98AC /* PoseTrackingGpuApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */; };
 		35BC55DF2926009E001B98AC /* PoseTrackingGpuApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35BC55E2292602DC001B98AC /* NativeLandmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BC55E1292602DC001B98AC /* NativeLandmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +55,7 @@
 		3511704A29259D5000056DA7 /* PoseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseController.swift; sourceTree = "<group>"; };
 		3511704C2925A3DA00056DA7 /* PoseTrackingGpuApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PoseTrackingGpuApp.framework; sourceTree = "<group>"; };
 		351170502925A4CF00056DA7 /* arena-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "arena-app-Bridging-Header.h"; sourceTree = "<group>"; };
+		35BC55E1292602DC001B98AC /* NativeLandmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeLandmark.swift; sourceTree = "<group>"; };
 		57197BC23307F5B4AD763928 /* Pods-arena-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arena-app.release.xcconfig"; path = "Target Support Files/Pods-arena-app/Pods-arena-app.release.xcconfig"; sourceTree = "<group>"; };
 		EF03D9F36895BB8C5C58D54A /* Pods-arena-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arena-app.debug.xcconfig"; path = "Target Support Files/Pods-arena-app/Pods-arena-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 				3511702F29243C1E00056DA7 /* SceneDelegate.swift */,
 				3511703129243C1E00056DA7 /* ViewController.swift */,
 				3511704A29259D5000056DA7 /* PoseController.swift */,
+				35BC55E1292602DC001B98AC /* NativeLandmark.swift */,
 				3511704929259D2800056DA7 /* Camera */,
 				3511704129243CEF00056DA7 /* SocketService.swift */,
 				3511704329243F5300056DA7 /* Extensions.swift */,
@@ -259,6 +262,7 @@
 				3511702E29243C1E00056DA7 /* AppDelegate.swift in Sources */,
 				3511704629259ABE00056DA7 /* CameraFeedManager.swift in Sources */,
 				3511703029243C1E00056DA7 /* SceneDelegate.swift in Sources */,
+				35BC55E2292602DC001B98AC /* NativeLandmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

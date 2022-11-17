@@ -30,16 +30,28 @@ class PoseController: UIViewController {
         tracker?.delegate = self
         tracker?.startGraph()
         
-        
-        
         view.addSubview(broadcastView)
         broadcastView.fillSuperview()
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        SocketService.shared.disconnectSocket()
         
     }
     //MARK: - Selectors
     
     //MARK: - Helper Functions
-    
+    func convertLandmarksToNativeLandmark(landmarks: [PoseLandmark]) -> [NativeLandmark] {
+        var allNativeLandmarks = [NativeLandmark]()
+        
+        landmarks.forEach { landmark in
+            allNativeLandmarks.append(NativeLandmark(mpLandmark: landmark))
+        }
+        
+        return allNativeLandmarks
+    }
     
 }
 
@@ -76,7 +88,7 @@ extension PoseController: CameraFeedManagerDelegate {
 
 extension PoseController: FullBodyPoseTrackerDelegate {
     func fullBodyPoseTracker(_ tracker: FullBodyPoseTracker!, didOutputLandmarks landmarks: [PoseLandmark]!) {
-        
+        SocketService.shared.sendLandmarks(landmarks: convertLandmarksToNativeLandmark(landmarks: landmarks))
     }
     
     func fullBodyPoseTracker(_ tracker: FullBodyPoseTracker!, didOutputPixelBuffer pixelBuffer: CVPixelBuffer!) {

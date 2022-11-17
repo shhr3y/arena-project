@@ -14,7 +14,7 @@ const grid = new LandmarkGrid(landmarkContainer, {
   centered: true,
 });
 
-var client = new io('192.168.0.103:9876', { 
+var client = new io('192.168.0.108:9876', { 
    transports : ['websocket'] });
 
 client.on("connect", () => {

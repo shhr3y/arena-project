@@ -27,9 +27,9 @@ class ViewController: UIViewController {
     }
     
     @objc func didTapConnect() {
-//        SocketService.shared.connectSocket()
-        print("pishing")
-        self.navigationController?.pushViewController(PoseController(), animated: true)
+        SocketService.shared.connectSocket {
+            self.navigationController?.pushViewController(PoseController(), animated: true)
+        }
     }
 
 

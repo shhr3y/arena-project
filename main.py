@@ -9,6 +9,7 @@ port = 9876
 
 mp_pose = mp.solutions.pose
 
+landmarkFile = 'landmarks.txt' 
 
 sio = socketio.Server(cors_allowed_origins="*", async_mode='eventlet')
 app = socketio.WSGIApp(sio)
@@ -21,14 +22,22 @@ def connect(*args):
 def ping(*args):
     landmarks = args[1]
     json_list = []
+    arena_list = []
     for landmark in landmarks:
         json_object = json.loads(landmark)
         json_object.pop("index", None)
         json_object.pop("isRemoved", None)
         json_object.pop("presence", None)
+
+        arena_obj = [json_object['x'], json_object['y'], json_object['z']]
+
         json_list.append(json_object)
+        arena_list.append(arena_obj)
 
     sio.emit('render', {'data': json_list})
+
+    with open(landmarkFile, 'w') as filetowrite:
+      filetowrite.write(json.dumps(arena_list))
 
 
 if __name__ == '__main__':

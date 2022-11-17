@@ -69,91 +69,91 @@ def get_position(coordinates):
 
 def update_head(coordinates):
     curr_pos = head_shape.data.position
-    head_shape.dispatch_animation(
-        Animation(
-                    property="position",
-                    start=curr_pos,
-                    end=get_position(coordinates),
-                    easing="linear",
-                    dur=animation_key
-                )
-    )
+    # head_shape.dispatch_animation(
+    #     Animation(
+    #                 property="position",
+    #                 start=curr_pos,
+    #                 end=get_position(coordinates),
+    #                 easing="linear",
+    #                 dur=animation_key
+    #             )
+    # )
     head_shape.update_attributes(position=get_position(coordinates))
 
 def update_right_wrist(coordinates):
     curr_pos = right_wrist_shape.data.position
-    right_wrist_shape.dispatch_animation(
-        Animation(
-                    property="position",
-                    start=curr_pos,
-                    end=get_position(coordinates),
-                    easing="linear",
-                    dur=animation_key
-                )
-    )
+    # right_wrist_shape.dispatch_animation(
+    #     Animation(
+    #                 property="position",
+    #                 start=curr_pos,
+    #                 end=get_position(coordinates),
+    #                 easing="linear",
+    #                 dur=animation_key
+    #             )
+    # )
     right_wrist_shape.update_attributes(position=get_position(coordinates))
 
 def update_left_wrist(coordinates):
     curr_pos = left_wrist_shape.data.position
-    left_wrist_shape.dispatch_animation(
-        Animation(
-                    property="position",
-                    start=curr_pos,
-                    end=get_position(coordinates),
-                    easing="linear",
-                    dur=animation_key
-                )
-    )
+    # left_wrist_shape.dispatch_animation(
+    #     Animation(
+    #                 property="position",
+    #                 start=curr_pos,
+    #                 end=get_position(coordinates),
+    #                 easing="linear",
+    #                 dur=animation_key
+    #             )
+    # )
     left_wrist_shape.update_attributes(position=get_position(coordinates))
 
 def update_left_shoulder(coordinates):
     curr_pos = left_shoulder_shape.data.position
-    left_shoulder_shape.dispatch_animation(
-        Animation(
-                    property="position",
-                    start=curr_pos,
-                    end=get_position(coordinates),
-                    easing="linear",
-                    dur=animation_key
-                )
-    )
+    # left_shoulder_shape.dispatch_animation(
+    #     Animation(
+    #                 property="position",
+    #                 start=curr_pos,
+    #                 end=get_position(coordinates),
+    #                 easing="linear",
+    #                 dur=animation_key
+    #             )
+    # )
     left_shoulder_shape.update_attributes(position=get_position(coordinates))
 
 def update_right_shoulder(coordinates):
     curr_pos = right_shoulder_shape.data.position
-    right_shoulder_shape.dispatch_animation(
-        Animation(
-                    property="position",
-                    start=curr_pos,
-                    end=get_position(coordinates),
-                    easing="linear",
-                    dur=animation_key
-                )
-    )
+    # right_shoulder_shape.dispatch_animation(
+    #     Animation(
+    #                 property="position",
+    #                 start=curr_pos,
+    #                 end=get_position(coordinates),
+    #                 easing="linear",
+    #                 dur=animation_key
+    #             )
+    # )
     right_shoulder_shape.update_attributes(position=get_position(coordinates))
 
 def update_right_elbow(coordinates):
     curr_pos = right_elbow_shape.data.position
-    right_elbow_shape.dispatch_animation(
-        Animation(
-                    property="position",
-                    start=curr_pos,
-                    end=get_position(coordinates),
-                    easing="linear",
-                    dur=animation_key
-                )
-    )
+    # right_elbow_shape.dispatch_animation(
+    #     Animation(
+    #                 property="position",
+    #                 start=curr_pos,
+    #                 end=get_position(coordinates),
+    #                 easing="linear",
+    #                 dur=animation_key
+    #             )
+    # )
     right_elbow_shape.update_attributes(position=get_position(coordinates))
 
 def update_left_elbow(coordinates):
     curr_pos = left_elbow_shape.data.position
-    left_elbow_shape.dispatch_animation(
-        Animation(
-                    property="position",
-                    start=curr_pos,
-                    end=get_position(coordinates),
-                    easing="linear",
-                    dur=animation_key
-                )
-    )
+    # left_elbow_shape.dispatch_animation(
+    #     Animation(
+    #                 property="position",
+    #                 start=curr_pos,
+    #                 end=get_position(coordinates),
+    #                 easing="linear",
+    #                 dur=animation_key
+    #             )
+    # )
     left_elbow_shape.update_attributes(position=get_position(coordinates))

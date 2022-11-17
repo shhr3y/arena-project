@@ -43,13 +43,14 @@ struct SocketService {
 //        }
     }
     
-    func connectSocket(){
+    func connectSocket(completion: @escaping () -> Void) {
         if socket.status != .connected{
             socket.connect()
         }
         
         socket.on("connect") {data, ack in
             print("DEBUG:- Socket Connection Established!")
+            completion()
             delegate?.join()
         }
         
@@ -62,7 +63,11 @@ struct SocketService {
         socket.disconnect()
     }
     
-    func sendLandmarks(landmarks: [String]) {
-        socket.emit("landmarks", landmarks)
+    func sendLandmarks(landmarks: [NativeLandmark]) {
+        var jsonLandmarks = [String]()
+        for landmark in landmarks {
+            jsonLandmarks.append(landmark.toJson())
+        }
+        socket.emit("landmarks", jsonLandmarks)
     }
 }
