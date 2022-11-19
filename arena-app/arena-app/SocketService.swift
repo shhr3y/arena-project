@@ -11,7 +11,7 @@ import SocketIO
 protocol SocketServiceDelegate {
     func join()
 }
-let REF_SERVER = "ws://192.168.0.108:9876/"
+let REF_SERVER = "ws://10.192.61.160:9876/"
 
 class SocketConnection {
     public static let shared = SocketConnection()

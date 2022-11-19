@@ -111,10 +111,10 @@
 		445F3AF58FC177DF6802158E98E83E02 /* SocketExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketExtensions.swift; path = Source/SocketIO/Util/SocketExtensions.swift; sourceTree = "<group>"; };
 		45621EFD357F9B4DF1FCD2AA6DCA10F0 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
 		4DA34940E93CFF53668DD8D334E462AE /* SocketStringReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketStringReader.swift; path = Source/SocketIO/Util/SocketStringReader.swift; sourceTree = "<group>"; };
-		50C0B0879B7086918A819F704BF40B4B /* Socket.IO-Client-Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Socket.IO-Client-Swift"; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C0B0879B7086918A819F704BF40B4B /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55277BDEB01111B89A0C9B4E097F2302 /* Pods-arena-app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-arena-app-acknowledgements.plist"; sourceTree = "<group>"; };
 		558D4B9816AE80AA84C79E6D7F08A603 /* SocketEngineSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineSpec.swift; path = Source/SocketIO/Engine/SocketEngineSpec.swift; sourceTree = "<group>"; };
-		55F90D08DCA3D8696B127781FF4DE0E2 /* Pods-arena-app */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-arena-app"; path = Pods_arena_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F90D08DCA3D8696B127781FF4DE0E2 /* Pods_arena_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_arena_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B51752051B744D59BB8BB088C899038 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/DataBytes/Data+Extensions.swift"; sourceTree = "<group>"; };
 		5BCC7F65FF8C05C8C2CE5B588FAB7150 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
 		5EF246BB470919F67C9CB1B75858D525 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
@@ -130,9 +130,9 @@
 		7BDB8C70FED68AC87E86E5D92A675C2D /* Pods-arena-app-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-arena-app-Info.plist"; sourceTree = "<group>"; };
 		8160A9B4F56AD38BD833FD93586C8803 /* WebSocketServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketServer.swift; path = Sources/Server/WebSocketServer.swift; sourceTree = "<group>"; };
 		88482AA60ABA82E5084F43B08BA279CA /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/Transport/Transport.swift; sourceTree = "<group>"; };
-		891B2270823847ED23F2ECFC28F935EC /* Starscream */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D446BED68DBFBDF4B442BC3A8C5F5BF /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A425AA20E60413BECC2CC0B6FB152FD1 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
 		A450BE6711E25C06122704E4CFCF4D2B /* WSEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEngine.swift; path = Sources/Engine/WSEngine.swift; sourceTree = "<group>"; };
 		A49DC258731631FDCA1F708670D5463C /* Pods-arena-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-arena-app.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,7 +222,6 @@
 				A450BE6711E25C06122704E4CFCF4D2B /* WSEngine.swift */,
 				55370BAAE5D88B3639E05A305309D7EA /* Support Files */,
 			);
-			name = Starscream;
 			path = Starscream;
 			sourceTree = "<group>";
 		};
@@ -252,9 +251,9 @@
 		643D4657D53106DC19E7991A30B6FF0C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55F90D08DCA3D8696B127781FF4DE0E2 /* Pods-arena-app */,
-				50C0B0879B7086918A819F704BF40B4B /* Socket.IO-Client-Swift */,
-				891B2270823847ED23F2ECFC28F935EC /* Starscream */,
+				55F90D08DCA3D8696B127781FF4DE0E2 /* Pods_arena_app.framework */,
+				50C0B0879B7086918A819F704BF40B4B /* SocketIO.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -305,7 +304,6 @@
 				174031608C01C69A306AD1CB9FD969B2 /* SocketTypes.swift */,
 				E467ECFB60B343C5C2C9939F1B2BAE59 /* Support Files */,
 			);
-			name = "Socket.IO-Client-Swift";
 			path = "Socket.IO-Client-Swift";
 			sourceTree = "<group>";
 		};
@@ -399,7 +397,7 @@
 			);
 			name = "Pods-arena-app";
 			productName = Pods_arena_app;
-			productReference = 55F90D08DCA3D8696B127781FF4DE0E2 /* Pods-arena-app */;
+			productReference = 55F90D08DCA3D8696B127781FF4DE0E2 /* Pods_arena_app.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
@@ -417,7 +415,7 @@
 			);
 			name = Starscream;
 			productName = Starscream;
-			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream */;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A44D85440C5D58BC5C4D70A539C5EEF0 /* Socket.IO-Client-Swift */ = {
@@ -436,7 +434,7 @@
 			);
 			name = "Socket.IO-Client-Swift";
 			productName = SocketIO;
-			productReference = 50C0B0879B7086918A819F704BF40B4B /* Socket.IO-Client-Swift */;
+			productReference = 50C0B0879B7086918A819F704BF40B4B /* SocketIO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
