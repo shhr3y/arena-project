@@ -1,4 +1,4 @@
-# Realtime Human Skeleton Interaction in ArenaXR using single camera
+# Realtime Human Skeleton Interaction in ArenaXR
 
 This repository contains the code for the realtime human skeleton 3d interaction in ArenaXR using a single camera as input started for Individual Study under Prof. Elahe Soltanaghai at University of Illinois Urbana-Champaign. This project demonstrates a human skeleton interacting(body movements, walking, waving) in a 3D Space using ArenaXR and iOS Aapplication which uses camera OR PC's front camera based on preference as user input and sends it to server making it easy to plugin at any location. 
 
