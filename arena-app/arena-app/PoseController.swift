@@ -16,7 +16,7 @@ class PoseController: UIViewController {
     private lazy var broadcastView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .random
+        imageView.backgroundColor = .darkGray
         return imageView
     }()
     

@@ -34,6 +34,6 @@ class CameraOrientationManager {
     }
     
     func getOrientationType() -> AVCaptureVideoOrientation {
-        return currentOrientation ?? .landscapeLeft
+        return .portrait
     }
 }

@@ -4,7 +4,7 @@ import json
 import mediapipe as mp
 
 
-host = '192.168.0.102'
+host = '192.168.0.100'
 port = 9876	
 
 mp_pose = mp.solutions.pose
